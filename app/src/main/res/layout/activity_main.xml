@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/website_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Search website" />
+        <Button
+            android:id="@+id/open_website_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website_edittext"
+            android:onClick="openWebsite"
+            android:text="Visit"/>
+
+        <EditText
+            android:id="@+id/location_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/open_website_btn"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="Search Location" />
+        <Button
+            android:id="@+id/button_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_edittext"
+            android:onClick="openLocation"
+            android:text="Location"/>
+
+        <EditText
+            android:id="@+id/share_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_loc"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="Share This Message" />
+        <Button
+            android:id="@+id/share_text_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_edittext"
+            android:onClick="shareText"
+            android:text="Share"/>
+
+        <EditText
+            android:id="@+id/phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_text_btn"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:hint="Input Phone Number" />
+        <Button
+            android:id="@+id/phone_text_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_edittext"
+            android:text="Dial"/>
+
+
+        <Button
+            android:id="@+id/send_text_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_text_btn"
+            android:text="Send Message"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
